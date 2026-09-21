@@ -476,7 +476,7 @@ function startMusic(){
   music.volume=0;
   music.play().then(()=>{
     muteBtn.classList.add('on');
-    let v=0; const fi=setInterval(()=>{v=Math.min(.7,v+.04); music.volume=v; if(v>=.7) clearInterval(fi);},150);
+    let v=0; const fi=setInterval(()=>{v=Math.min(.25,v+.04); music.volume=v; if(v>=.25) clearInterval(fi);},150);
   }).catch(()=>{});
 }
 muteBtn.addEventListener('click',e=>{
